@@ -1,5 +1,6 @@
 ﻿using BookStore_API.Contracts;
 using BookStore_API.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,39 +10,58 @@ namespace BookStore_API.Services
 {
     public class BookRepository : IBookRepository
     {
-        public Task<bool> Create(Book entity)
+        private readonly ApplicationDbContext _db;
+
+        public BookRepository(ApplicationDbContext db)
         {
-            throw new NotImplementedException();
+            _db = db;
         }
 
-        public Task<bool> Delete(Book entity)
+        public async Task<bool> Create(Book entity)
         {
-            throw new NotImplementedException();
+            await _db.AddAsync(entity);
+
+            return await Save();
         }
 
-        public Task<IList<Book>> FindAll()
+        public async Task<bool> Delete(Book entity)
         {
-            throw new NotImplementedException();
+            _db.Books.Remove(entity);
+            return await Save();
         }
 
-        public Task<Book> FindById(int id)
+        public async Task<IList<Book>> FindAll()
         {
-            throw new NotImplementedException();
+            var books = await _db.Books.ToListAsync();
+
+            return books;
         }
 
-        public Task<bool> isExist(int id)
+        public async Task<Book> FindById(int id)
         {
-            throw new NotImplementedException();
+            var book = await _db.Books.FindAsync(id);
+
+            return book;
         }
 
-        public Task<bool> Save()
+        public async Task<bool> isExist(int id)
         {
-            throw new NotImplementedException();
+            var isExist = await _db.Books.AnyAsync(a => a.Id == id);
+
+            return isExist;
         }
 
-        public Task<bool> Update(Book entity)
+        public async Task<bool> Save()
         {
-            throw new NotImplementedException();
+            var changes = await _db.SaveChangesAsync();
+
+            return changes > 0;
+        }
+
+        public async Task<bool> Update(Book entity)
+        {
+            _db.Books.Update(entity);
+            return await Save();
         }
     }
 }
