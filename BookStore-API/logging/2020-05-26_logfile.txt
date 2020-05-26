@@ -1,0 +1,19 @@
+2020-05-26 15:15:47.8359 INFO Author update Attepmted
+2020-05-26 15:15:48.2357 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AuthorUpdateDTO -> Author
+BookStore_API.DTOs.AuthorUpdateDTO -> BookStore_API.Data.Author - 
+2020-05-26 15:17:02.4866 INFO Author update Attepmted
+2020-05-26 15:17:06.6217 INFO Author updated
+2020-05-26 15:23:11.3983 INFO Author delete Attepmted
+2020-05-26 15:23:15.9281 INFO Author updated
+2020-05-26 15:23:24.8599 INFO Accessed Author Controller
+2020-05-26 15:23:25.1004 INFO Successfully got all Authors
+2020-05-26 15:23:40.2645 INFO Author delete Attepmted
+2020-05-26 15:33:36.8244 INFO Author Submission Attepmted
+2020-05-26 15:33:40.4432 INFO Author created
+2020-05-26 15:33:45.1602 INFO Accessed Author Controller
+2020-05-26 15:33:45.8371 INFO Successfully got all Authors
+2020-05-26 15:33:52.8645 INFO Author delete Attepmted
+2020-05-26 15:33:53.4184 INFO Author updated
