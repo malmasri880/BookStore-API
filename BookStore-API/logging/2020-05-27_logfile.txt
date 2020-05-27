@@ -1,0 +1,58 @@
+2020-05-27 14:16:47.3916 INFO Accessed Author Controller
+2020-05-27 14:16:47.8446 INFO Successfully got all Authors
+2020-05-27 14:16:58.1145 INFO Accessed book Controller
+2020-05-27 14:16:58.4228 INFO Successfully got all books
+2020-05-27 14:17:14.7932 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:17:14.9892 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 14:19:21.4682 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:19:21.7858 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 14:19:38.0454 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:19:38.1064 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 14:19:46.3813 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:19:46.5679 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 14:20:11.7787 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:21:20.3265 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 14:21:38.1208 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 14:41:04.0458 INFO Users - Login : Accessed user Controller
+2020-05-27 14:41:18.8711 INFO Users - Login : Accessed user Controller
+2020-05-27 15:20:58.7127 INFO Users - Login : Login attempt for user admin
+2020-05-27 15:39:39.0577 INFO Accessed Author Controller
+2020-05-27 15:39:39.4699 INFO Successfully got all Authors
+2020-05-27 15:40:18.1119 INFO Accessed Author Controller by ID : 0
+2020-05-27 15:40:20.8480 WARN Author Id:0 isn't found : 
+2020-05-27 15:40:30.0346 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:40:33.0728 ERROR Authors - GetAuthor:Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> IList`1
+BookStore_API.Data.Author -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2020-05-27 15:40:45.6789 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:41:40.9902 ERROR Authors - GetAuthor:Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> IList`1
+BookStore_API.Data.Author -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2020-05-27 15:41:46.9967 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:41:50.1840 INFO Successfully got Author by Id : 1
+2020-05-27 15:43:28.2342 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:43:33.8573 INFO Successfully got Author by Id : 1
+2020-05-27 15:43:54.2810 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:43:54.4516 INFO Successfully got Author by Id : 1
+2020-05-27 15:44:08.3658 INFO Books - GetBook: Attempted call for id:3
+2020-05-27 15:44:08.9090 INFO Books - GetBook: Successfully got record with id: 3
+2020-05-27 15:47:05.7141 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:47:06.1264 INFO Successfully got Author by Id : 1
+2020-05-27 15:47:13.3682 INFO Accessed Author Controller by ID : 1
+2020-05-27 15:47:13.4734 INFO Successfully got Author by Id : 1
+2020-05-27 15:48:45.2026 INFO Users - Login : Login attempt for user customer1
+2020-05-27 15:50:27.5268 INFO Users - Login : Login attempt for user customer1
+2020-05-27 15:51:03.3625 INFO Users - Login : Login attempt for user admin
+2020-05-27 15:51:45.7856 INFO Users - Login : Login attempt for user administrator
+2020-05-27 15:52:17.6469 INFO Users - Login : Login attempt for user admin
+2020-05-27 15:54:25.9175 INFO Author Submission Attepmted
+2020-05-27 15:54:26.6470 INFO Author created
+2020-05-27 15:56:57.6767 INFO Users - Login : Login attempt for user admin
+2020-05-27 15:57:09.4946 INFO Author Submission Attepmted
+2020-05-27 15:57:10.1759 INFO Author created
+2020-05-27 15:57:22.0529 INFO Accessed Author Controller
+2020-05-27 15:57:22.2202 INFO Successfully got all Authors
